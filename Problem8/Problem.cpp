@@ -2,6 +2,7 @@
 #include <string>
 #include <deque>
 #include <cmath>
+#include <algorithm>
 using namespace std;
 
 const string NUMBER = "73167176531330624919225119674426574742355349194934"
@@ -43,8 +44,7 @@ int main()
 			{
 				product *= asciiToNumber(c);
 			}
-			if (product > productMax)
-				productMax = product;
+			productMax = max(productMax, product);
 			if (productMax == PRODUCT_MAX)
 				break;
 			deque.pop_back();
