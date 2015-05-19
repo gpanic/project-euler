@@ -3,7 +3,18 @@
 
 const int GRID_SIZE = 20;
 
+void lattice_paths1();
+void lattice_paths2();
+ull combinations(int n, int k);
+
 int main()
+{
+	lattice_paths1();
+	lattice_paths2();
+	std::cin.get();
+}
+
+void lattice_paths1()
 {
 	ull grid[GRID_SIZE + 1][GRID_SIZE + 1] = { 0 };
 
@@ -21,5 +32,20 @@ int main()
 		}
 	}
 	std::cout << grid[0][0] << std::endl;
-	std::cin.get();
+}
+
+void lattice_paths2()
+{
+	std::cout << combinations(2 * GRID_SIZE, GRID_SIZE) << std::endl;
+}
+
+ull combinations(int n, int k)
+{
+	ull combs = 1;
+	for (int i = 1; i <= k; ++i)
+	{
+		combs *= n + 1 - i;
+		combs /= i;
+	}
+	return combs;
 }
