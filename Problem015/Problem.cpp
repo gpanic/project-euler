@@ -1,5 +1,6 @@
-#define ull unsigned long long
 #include <iostream>
+
+typedef unsigned long long ull;
 
 const int GRID_SIZE = 20;
 

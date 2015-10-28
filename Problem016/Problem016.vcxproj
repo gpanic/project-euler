@@ -11,9 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{88A738FF-747F-4823-A395-9B03ED996A1D}</ProjectGuid>
-    <RootNamespace>Problem5</RootNamespace>
-    <ProjectName>Problem005</ProjectName>
+    <ProjectGuid>{686DA268-36BB-4350-A35E-D559827BF7BA}</ProjectGuid>
+    <RootNamespace>Problem016</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -48,7 +47,6 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -66,10 +64,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Problem.cpp" />
+    <Text Include="Description.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Description.txt" />
+    <ClCompile Include="Problem.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
